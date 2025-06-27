@@ -216,3 +216,200 @@
 // counter += 5;
 // counter += 3;
 // console.log(counter); // 8
+
+
+// conditionals
+
+// if (condition == true){
+//     // code to execute if condition is true
+// }
+
+// operators associated with conditions
+// == (equal to)
+// === (strict equal to)
+// != (not equal to)
+// !== (strict not equal to)
+// > (greater than)
+// < (less than)
+// >= (greater than or equal to)
+// <= (less than or equal to)
+// && (logical AND)
+// || (logical OR)
+
+// ifelse statements
+// if (condition == true) {
+//     // code to execute if condition is true
+// } else {
+//     // code to execute if condition is false
+// }
+
+// example of ifelse statement
+// var result = 50;
+// if (result>50){
+//     console.log("You passed the test!");
+// }else if (result == 50){
+//     console.log("You got exactly 50!");
+// }else{
+//     console.log("You failed the test.");
+// }
+
+
+// var place ='first';
+// switch(place){
+//     case 'first':
+//         console.log("Gold medal");
+//         break;
+//     case 'second':
+//         console.log("Silver medal");
+//         break;
+//     case 'third':
+//         console.log("Bronze medal");
+//         break;
+//     default:
+//         console.log("No medal");
+//         break;
+// }
+
+// var age = 10;
+
+// if (age>65){
+//     console.log("You get your income from your pension");
+// }else if(age<65 && age>18){
+//     console.log("Each month you get a salary");
+// }else if(age<18){
+//     console.log("You get an allowance");
+// }else{
+//     console.log("The value of the age variable is not numerical");
+// }
+
+// var day = "Sunday";
+
+// switch(day){
+//     case "Monday":
+//         console.log("Start of the work week");
+//         break;
+//     case "Tuesday":
+//         console.log("Second day of the work week");
+//         break;
+//     case "Wednesday":
+//         console.log("Midweek day");
+//         break;
+//     case "Thursday":
+//         console.log("Almost the weekend");
+//         break;
+//     case "Friday":
+//         console.log("Last day of the work week");
+//         break;
+//     case "Saturday":
+//         console.log("Weekend starts");
+//         break;
+//     case "Sunday":
+//         console.log("Relax, it's Sunday");
+//         break;
+//     default:
+//         console.log("There is no such day");
+//         break;
+// }
+
+
+// LOOPS
+
+// for loop
+// i = 0 is the counter variable
+// i < 5 is the condition to continue the loop
+// i++ is the increment operation
+
+// for (var i = 0; i < 5; i++) {
+//     console.log("Iteration number:", i);
+// }
+// decrementing for loop
+// for (var i = 5; i > 0; i--) {
+//     console.log("Countdown:", i);
+// }
+
+// for loop with array
+// var fruits = ["apple", "banana", "cherry"];
+// for (var i = 0; i < fruits.length; i++) {
+//     console.log("Fruit:", fruits[i]);
+// }
+
+// for loop with array and index
+// var fruits = ["apple", "banana", "cherry"];
+// for (var i = 0; i < fruits.length; i++) {
+//     console.log("Fruit at index", i, "is", fruits[i]);
+// }
+
+// while loop
+// var j is the counter variable
+// j < 5 is the condition to continue the loop
+// var j = 0;
+// while (j < 5) {
+//     console.log("Iteration number:", j);
+//     j++;
+// }
+
+// decrementing loop
+// var k = 5;
+// while (k > 0) {
+//     console.log("Countdown:", k);
+//     k--;
+// }
+
+// var i = 5;
+// while(i>0){
+//     console.log(i)
+//     i--
+// }
+// console.log("Countdown finished")
+
+// var i = 2018;
+// while(i <= 2022){
+//     console.log(i)
+//     i++
+// }
+
+
+// nested loops
+// 
+// for (var i = 1; i < 3; i++) {  // Outer loop
+//     for (var j = 1; j < 8; j++) { //inner loop
+//         console.log("Week ", i, "Day ", j); //output
+//     }
+// }
+
+// for(var year = 2023; year < 2025; year++){
+//     console.log("Year:", year);
+//     for(var month =6; month <9; month++){
+//         console.log("Month:", month);
+//     }
+// }
+
+// for (var i=1;i<11;i++){
+//     if(i==1){
+//         console.log("Gold Medal");
+//     }else if(i==2){
+//         console.log("Silver Medal");
+//     }
+//     else if(i==3){
+//         console.log("Bronze Medal");
+//     }else{
+//         console.log(i);
+//     }
+// }
+
+// for (var i=1;i<11;i++){
+//     switch(i){
+//         case 1:
+//             console.log("Gold Mental");
+//             break;
+//         case 2:
+//             console.log("Silver Mental");
+//             break;
+//         case 3:
+//             console.log("Bronze Mental");
+//             break;
+//         default:
+//             console.log(i);
+//             break;
+//     }
+// }
