@@ -413,3 +413,266 @@
 //             break;
 //     }
 // }
+
+// functions
+
+// function greet(name) {
+//     console.log("Hello, " + name + "!");
+// }
+
+// greet("Alice");
+
+// function addTwoNums(num1, num2){
+//     var sum = num1 + num2;
+//     console.log("The sum of", num1, "and", num2, "is", sum);
+// }
+
+// addTwoNums(5, 10);
+
+
+// storing data in arrays
+
+// var fruits = [];
+// fruits.push("apple"); // ['apple']
+// fruits.push('pear'); // ['apple', 'pear']
+
+// console.log(fruits); // ['apple', 'pear']
+
+// fruits.pop();
+// console.log(fruits); // ['apple']
+// // LILO
+
+
+// function arrayBuilder(one, two, three) {
+//     var arr = [];
+//     arr.push(one);
+//     arr.push(two);
+//     arr.push(three);
+//     console.log(arr);
+// }
+// arrayBuilder("apple", "banana", "cherry"); // ['apple', 'banana', 'cherry']
+
+// this is a simple function that builds an array from three arguments
+// it takes three arguments and pushes them into an array
+
+// function arrayBuilder(one, two, three) {
+//     var arr = [];
+//     arr.push(one);
+//     arr.push(two);
+//     arr.push(three);
+//     return arr;
+// }
+
+// var simpleArr = arrayBuilder('apple', 'pear', 'plum');
+// console.log(simpleArr); // ['apple', 'pear', 'plum']
+
+// math functions from the Math object
+// var MyNum = Math.sqrt(16); // Calculates square root of 16
+// console.log(MyNum); // Output: 4
+
+// Math object cheat sheet
+// JavaScript has useful built-in objects. One of these popular built-in objects is the Math object.
+
+// By the end of this reading, you'll be able to:
+
+// Outline the built-in properties and methods of the Math object
+
+// Number constants
+// Here are some of the built-in number constants that exist on the Math object: 
+
+// The PI number: Math.PI which is approximately 3.14159
+
+// Euler's number: Math.E which is approximately 2.718
+
+// The natural logarithm of 2: Math.LN2 which is approximately 0.693
+
+// Rounding methods
+// These include: 
+
+//  Math.ceil() - rounds up to the closest integer 
+
+//  Math.floor() - rounds down to the closest integer 
+
+//  Math.round() - rounds up to the closest integer if the decimal is .5 or above; otherwise, rounds down to the closest integer 
+
+//  Math.trunc() - trims the decimal, leaving only the integer
+
+// Arithmetic and calculus methods
+// Here is a non-conclusive list of some common arithmetic and calculus methods that exist on the Math object: 
+
+// Math.pow(2,3) - calculates the number 2 to the power of 3, the result is 8 
+
+// Math.sqrt(16) - calculates the square root of 16, the result is 4 
+
+// Math.cbrt(8) - finds the cube root of 8, the result is 2 
+
+// Math.abs(-10) - returns the absolute value, the result is 10 
+
+// Logarithmic methods: Math.log(), Math.log2(), Math.log10() 
+
+// Return the minimum and maximum values of all the inputs: Math.min(9,8,7) returns 7, Math.max(9,8,7) returns 9.
+
+//  Trigonometric methods: Math.sin(), Math.cos(), Math.tan(), etc.
+
+// Logarithmic Methods
+// Math.log(x) - Returns the natural logarithm (base e) of x.
+
+// Math.log2(x) - Returns the base-2 logarithm of x.
+
+// Math.log10(x) - Returns the base-10 logarithm of x.
+
+// Logarithmic Methods
+// Math.log(x) - Returns the natural logarithm (base e) of x.
+
+// Math.log2(x) - Returns the base-2 logarithm of x.
+
+// Math.log10(x) - Returns the base-10 logarithm of x.
+
+// MATH RANDOM
+// Math.random() //Returns a random floating-point number between 0 (inclusive) and 1 (exclusive).
+// var item = Math.random(); // Generates a random number
+// console.log(item); // Outputs a random number between 0 and 1
+
+// Math.ceil()
+// var num=4.1;
+// var roundedNumber = console.log(Math.ceil(num))
+// // Outputs: 5 (rounds up to the nearest integer)
+
+
+// for loop over arrays
+
+// var arr = [1, 2, 3, 4, 5];
+// for (var i = 0; i < arr.length; i++){
+//     console.log("Element at index", i, "is", arr[i]);
+// }
+
+// const letters="abc";
+// const match = "abc"
+// for (var i = 0; i < letters.length; i++) {
+//     for(var j=0; j<match.length; j++){
+//         if(letters[i] == match[j]){
+//             console.log("Match found:", letters[i]);
+//         }
+//     }
+// }
+
+// var veggies = ["carrot", "broccoli", "spinach"];
+// for (var i = 0; i < veggies.length; i++) {
+//     console.log("Vegetable at index", i, "is", veggies[i]);
+// }
+
+// const greeting = "Hello, World!";
+// for(var i = 0; i<greeting.length;i++){
+//     const match = ["e", "o"];
+//     for (var j=0;j<match.length;j++){
+//         if(greeting[i] == match[j]){
+//             console.log("Match found:", greeting[i], "at index", i);
+//         }
+//     }
+// }
+
+// var greet = "Hello, World!";
+// var user = "Alice";
+
+// // console.log(greet + " " + user + "!"); // Concatenation
+// console.log(greet.concat(user)); // Using concat method
+
+// String cheat sheet
+// By the end of this reading, you'll be able to:
+
+// Identify examples of String functions and explain how to call them
+
+// In this cheat sheet, I'll list some of the most common and most useful properties and methods available on strings.
+
+// For all the examples, I'll be using either one or both of the following variables:
+
+// 21
+// var greet = "Hello, ";
+// var place = "World";
+// The length here will be 7 as total of 5 characters, 1 comma and the 1 blank space inside the string.
+
+// Note that whatever string properties and methods I demo in the following examples, I could have run it on those strings directly, without saving them to a variable such as the ones I named greet and place.
+
+// In some of the examples that follow, for the sake of clarity, instead of using a variable name, I'll use the string itself.
+
+// All strings have at their disposal several built-in properties, but there's a single property that is really useful: the length property, which is used like this:
+
+// 1
+// greet.length; // 7
+// To read each individual character at a specific index in a string, starting from zero, I can use the charAt() method:  
+
+// 12
+// var greet = "Hello, ";
+// greet.charAt(0); // 'H'
+// The concat() method joins two strings:  
+
+// 1
+// "Wo".concat("rl").concat("d"); // 'World'
+// The indexOf returns the location of the first position that matches a character: 
+
+// 123
+// "ho-ho-ho".indexOf('h'); // 0
+// "ho-ho-ho".indexOf('o'); // 1
+// "ho-ho-ho".indexOf('-'); // 2
+// The lastIndexOf finds the last match, otherwise it works the same as indexOf.
+
+// The split method chops up the string into an array of sub-strings:
+
+// 1
+// "ho-ho-ho".split("-"); // ['ho', 'ho', 'ho']
+// There are also some methods to change the casing of strings. For example:  
+
+// 12
+// greet.toUpperCase(); // "HELLO, "
+// greet.toLowerCase(); // "hello, "
+// Here's a list of all the methods covered in this cheat sheet:
+
+// charAt() 
+
+// concat() 
+
+// indexOf() 
+
+// lastIndexOf() 
+
+// split() 
+
+// toUpperCase() 
+
+// toLowerCase()  
+
+// var clothes = [];
+// clothes.push("Jag")
+// clothes.push("Zara")
+// clothes.push("H&M")
+// clothes.push("Uniqlo")
+// clothes.push("Penshoppe")
+// clothes.pop()
+// console.log(clothes)
+
+// var favCar = {};
+// favCar.color = "red";
+// favCar.convertible = true;
+// console.log(favCar);
+
+// const favcar={
+//     color: "red",
+//     convertible: true,
+//     year: 2020,
+//     brand: "Toyota"
+// }
+// console.log(favcar);
+
+function createCar(color, convertible, year, brand) { //this is a function that creates a car object
+    // it takes four parameters: color, convertible, year, and brand
+
+    // then it returns an object with those properties
+    // this is a simple function that creates a car object
+    return {
+        color: color,
+        convertible: convertible,
+        year: year,
+        brand: brand
+    };
+}
+console.log(createCar("red", true, 2020, "Toyota"));
