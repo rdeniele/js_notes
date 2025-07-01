@@ -675,4 +675,144 @@ function createCar(color, convertible, year, brand) { //this is a function that 
         brand: brand
     };
 }
-console.log(createCar("red", true, 2020, "Toyota"));
+// console.log(createCar("red", true, 2020, "Toyota"));
+
+
+
+// var car = {};
+
+// car.color = "red";
+
+// //add a method to the car object so that it can be called as car.turnkey()
+// car.turnKey = function() { 
+//   console.log('engine running'); 
+// }
+
+// car.turnKey(); // Outputs: engine running
+
+// var car = {};
+// car.mileage = 98765;
+// car.color = "red";
+// console.log(car);
+
+// var car = {};
+// car.mileage = 98765;
+// car.color = "red";
+// console.log(car);
+// car.turnTheKey = function() {
+//     console.log("The engine is running")
+// }
+// console.log(car);
+
+//example of adding properties and methods to an object
+// var car = {};
+// car.mileage = 98765;
+// car.color = "red";
+// console.log(car);
+// car.turnTheKey = function() {
+//     console.log("The engine is running")
+// }
+// car.lightsOn = function() {
+//     console.log("The lights are on.")
+// }
+// console.log(car);
+// car.turnTheKey();
+// car.lightsOn()
+
+//   var dog = {
+//       color: "brown",
+//       height: 30,
+//       length: 60
+//   };
+//   dog["type"] = "corgi";
+//   console.log(dog);
+
+//   var result = "Hello".indexOf('l');
+//   console.log(result); // Outputs: 2 (the index of the first 'l' in "Hello")
+
+// debugging
+
+// console.log(a+c)
+// console.log("This is a debug message");
+
+// syntax error example
+// var word= "hello;
+
+// try {
+//     console.log(c+b);
+// } catch (error) {
+//     console.error("An error occurred:", error.message);
+    
+// }
+
+// console.log("This code now runs after the error was caught. You can continue executing other code here.");
+
+// throw new ReferenceError("This is a custom error message");
+
+
+// try {
+//     console.log(a+b)
+// } catch (err) {
+//     console.error(err);
+//     console.log("An error occurred. Please check your code.");
+// }
+// console.log("This code runs after the error was caught. You can continue executing other code here.");
+
+// undefined, null, and empty values
+// Undefined is a variable that has been declared but not assigned a value
+// var noise;
+// console.log(noise); // Outputs: undefined
+
+// noise = "meow";
+// console.log(noise); // Outputs: "meow"
+
+// var game={
+//     score:1000,
+// }
+// game.Score;
+
+// var name1 = ''; // empty string
+// var name2 = ""; // also an empty string
+
+// var name3 = null; // null value
+
+// )function addTwoNums(a,b){
+//     console.log(a + b);
+// }
+
+// addTwoNums(5, "5"); 
+
+// function addTwoNums(a,b){
+//     try {
+//         if (typeof a !== 'number') {
+//             throw new TypeError("The first argument is not a number.");
+//         }else if (typeof b !== 'number') {
+//             throw new TypeError("The second argument is not a number.");
+//         }else{
+//             console.log(a + b);
+//         }
+//     } catch (err) {
+//         console.log("Error!",err);
+//     }
+// }
+
+// addTwoNums(5, "5"); // Outputs: 55 (string concatenation)
+
+// console.log("It still works"); // Outputs: It still works
+
+// function letterFinder(word, match) {
+//     var condition1 = typeof word == 'string' && word.length > 2
+//     var condition2= typeof match == 'string' && match.length == 1;
+
+//     if (condition1 == true && condition2 == true){
+//         for (var i =0;i<word.length;i++){
+//             if(word[i] == match){
+//                 console.log('Found the', match, 'at', i)
+//             }else{
+//                 console.log('---No match found at', i)
+//             }
+//         }
+//     }
+// }
+
+// letterFinder("cat", "c");
