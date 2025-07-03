@@ -816,3 +816,17 @@ function createCar(color, convertible, year, brand) { //this is a function that 
 // }
 
 // letterFinder("cat", "c");
+
+
+// functional programming
+
+// var currencyOne = 100;
+// var currencyTwo = 0;
+// var exchangeRate = 0.85;
+
+// function convertCurrency(amount,rate){
+//     return amount * rate;
+// }
+
+// currencyTwo = convertCurrency(currencyOne, exchangeRate);
+// console.log("Converted amount:", currencyTwo); // Outputs: Converted amount: 85
