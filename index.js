@@ -830,3 +830,177 @@ function createCar(color, convertible, year, brand) { //this is a function that 
 
 // currencyTwo = convertCurrency(currencyOne, exchangeRate);
 // console.log("Converted amount:", currencyTwo); // Outputs: Converted amount: 85
+
+// var is used when you want to declare a variable that can be reassigned later
+// const is used when you want to declare a variable that cannot be reassigned later
+// let is used when you want to declare a variable that can be reassigned later, but
+
+// OOP
+// var purchase1 = {
+//     shoes:100,
+//     stateTax: 0.05,
+//     shipping: 10,
+//     calculateTotal: function() {
+//         var total = this.shoes + (this.shoes * this.stateTax) + this.shipping;
+//         return total;
+//     }
+// }
+
+// console.log("Total purchase amount:", purchase1.calculateTotal()); // Outputs: Total purchase amount: 115
+// this means the current object
+// this is used to refer to the current object in a method
+
+
+// var purchase2 = {
+//     shoes: 80,
+//     stateTax: 0.05,
+//     shipping: 10,
+//     calculateTotal: function() {
+//         var total = this.shoes + (this.shoes * this.stateTax) + this.shipping;
+//         return total;
+//     },}
+
+// console.log("Total purchase amount:", purchase2.calculateTotal()); // Outputs: Total purchase amount: 115
+// OOP is a programming paradigm that uses objects to represent data and methods to manipulate that data.
+// It allows you to create reusable code and organize your code in a more structured way.
+// OOP allows you to create objects that can have properties and methods.
+// OOP allows you to create classes that can be used to create objects with the same properties and methods.
+
+// class declaration
+
+// class Car{
+//     // constructor is a special method that is called when an object is created
+//     // it is used to initialize the properties of the object
+//     constructor(color, speed){
+//         this.color = color;
+//         this.speed = speed;
+//     }
+//     // method to start the turbo of the car
+//     turboOn(){
+//         console.log("Turbo is on! Speed increased to", this.speed + 50);
+//     }
+// }
+
+// // creating an object of the Car class
+// var myCar = new Car("red", 100);
+// console.log("My car color is", myCar.color); // Outputs: My car color is
+// console.log("My car speed is", myCar.speed); // Outputs: My car speed is 100
+// myCar.turboOn(); // Outputs: Turbo is on! Speed increased to 150
+
+// // extending a class
+// class SportsCar extends Car {
+//     constructor(color, speed, brand) {
+//         super(color, speed); // Call the parent class constructor
+//         this.brand = brand; // Add a new property specific to SportsCar
+//     }
+// }
+
+// var mySportsCar=new SportsCar("blue", 200, "Ferrari");
+// console.log("My sports car color is", mySportsCar.color); // Outputs: My sports car color is blue
+// console.log("My sports car speed is", mySportsCar.speed); // Outputs: My sports car speed is 200
+// console.log("My sports car brand is", mySportsCar.brand); // Outputs: My sports car brand is Ferrari
+// mySportsCar.turboOn(); // Outputs: Turbo is on! Speed increased to 250
+// // turboOn is inherited from the Car class
+
+// encapsulation
+// class BankAccount {
+//     constructor(accountNumber, balance) {
+//         this.accountNumber = accountNumber;
+//         this._balance = balance; // Using underscore to indicate private property
+//     }
+
+//     // Method to deposit money
+//     deposit(amount) {
+//         if (amount > 0) {
+//             this._balance += amount;
+//             console.log(`Deposited ${amount}. New balance: ${this._balance}`);
+//         } else {
+//             console.log("Deposit amount must be positive.");
+//         }
+//     }
+
+//     // Method to get the current balance
+//     getBalance() {
+//         return this._balance;
+//     }
+// }
+
+// // Creating an instance of BankAccount
+// var myAccount = new BankAccount("123456789", 1000);
+// console.log("Account Number:", myAccount.accountNumber); // Outputs: Account Number: 123456789
+// console.log("Initial Balance:", myAccount.getBalance()); // Outputs: Initial Balance: 100
+// myAccount.deposit(500); // Outputs: Deposited 500. New balance: 1500
+// console.log("Updated Balance:", myAccount.getBalance()); // Outputs: Updated Balance: 1500
+
+// so this is a simple example of encapsulation in OOP
+// encapsulation is a principle of OOP that restricts direct access to an object's properties and methods.
+// encapsulation is achieved by using private properties and methods, which are not accessible from outside the class
+//ecapsulation is used when you want to hide the internal state of an object and only expose a public interface for interacting with the object
+
+// polymorphism
+// const bicycle = {
+//     bell: function() {
+//         return "Ring, ring! Watch out, please!";
+//     }
+// }
+// const door = {
+//     bell: function() {
+//         return "Ring, ring! Come here, please!";
+//     }
+// }
+
+// console.log(bicycle.bell()); // Outputs: Ring ring! Watch out, please!
+// console.log(door.bell()); // Outputs: Ring ring! Come here, please!
+
+
+// function ringTheBell(thing){
+//     console.log(thing.bell());
+// }
+
+// ringTheBell(bicycle); // Outputs: Ring ring! Watch out, please!
+// ringTheBell(door); // Outputs: Ring ring! Come here, please!
+
+// when to use polymorphism
+// Polymorphism is used when you want to define a common interface for different types of objects.
+// It allows you to use the same method name for different objects, and each object can have its own implementation of that method.
+// Polymorphism is useful when you want to create a flexible and extensible codebase that can handle different types of objects without changing the code that uses those objects.
+
+
+// Another example of polymorphism is the concatenation operator, used by calling the built-in concat() method.
+
+// If I use the concat() method on two strings, it behaves exactly the same as if I used the + operator. 
+
+// console.log("abc".concat("def")); // 'abcdef'
+// console.log(["abc"].concat(["def"])); // ['abc', 'def']
+// console.log(["abc"] + ["def"]); // "abc,def"
+
+
+
+// Here's an example of polymorphism using classes in JavaScript:
+
+// class Bird {
+//     useWings() {
+//         console.log("Flying!");
+//     }
+// }
+// // The Bird class has a method called useWings that prints "Flying!" to the console.
+
+
+// class Eagle extends Bird {
+//     useWings() {
+//         super.useWings(); //super calls the parent class's method
+//         console.log("Barely flapping!");
+//     }
+// }
+// // The Eagle class extends the Bird class and overrides the useWings method. It calls the parent class's useWings method using super and adds its own behavior by printing "Barely flapping!" to the console.
+
+// class Penguin extends Bird {
+//     useWings() {
+//         console.log("Diving!");
+//     }
+// }
+
+// var baldEagle = new Eagle();
+// var kingPenguin = new Penguin();
+// baldEagle.useWings(); // "Flying! Barely flapping!"
+// kingPenguin.useWings(); // "Diving!"
