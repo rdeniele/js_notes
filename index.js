@@ -1004,3 +1004,387 @@ function createCar(color, convertible, year, brand) { //this is a function that 
 // var kingPenguin = new Penguin();
 // baldEagle.useWings(); // "Flying! Barely flapping!"
 // kingPenguin.useWings(); // "Diving!"
+
+// function Icecream(flavor) {
+//     this.flavor = flavor;
+//     this.meltIt = function() {
+//         console.log(`The ${this.flavor} icecream has melted`);
+//     }
+// }
+
+// var chocolateIcecream = new Icecream("chocolate");
+// chocolateIcecream.meltIt(); // Outputs: The chocolate icecream has melted
+// chocolateIcecream.flavor = "vanilla"; // Changing the flavor property
+// console.log(chocolateIcecream.flavor); // Outputs: vanilla
+
+// "abcd".match(/d/); // ['d', index: 3, input: 'abcd', groups: undefined]
+// "abcd".match(/a/); // ['a', index: 0, input: 'abcd', groups: undefined]
+
+// "abcd".match(/b/); // ['b', index: 1, input: 'abcd', groups: undefined]
+
+// console.log("abcd".match(/c/)); // ['c', index: 2, input: 'abcd', groups: undefined]
+
+
+// new Date();
+// new Error();
+// new Map();
+// new Promise();
+// new Set();
+// new WeakSet();
+// new WeakMap();
+
+// var bird = {
+//     // prototype object for bird
+//     haswings: true,
+//     canFly: true,
+//     hasFeathers: true,
+// }
+
+// var eagle = Object.create(bird); // Create a new object eagle that inherits from bird
+// console.log("eagle:", eagle); // Outputs: eagle: {}
+// console.log("eagle has wings", eagle.haswings); // Outputs: eagle: {}
+// console.log("eagle can fly", eagle.canFly); // Outputs: eagle: {}
+// console.log("eagle can feathers", eagle.hasFeathers); // Outputs: eagle: {}
+
+// var pengiun = Object.create(bird); // Create a new object pengiun that inherits from bird
+// pengiun.canFly = false; // Override the canFly property for pengiun
+// console.log("pengiun:", pengiun); // Outputs: pengiun: {}
+// console.log("pengiun has wings", pengiun.haswings); // Outputs: pengiun: {}
+// console.log("pengiun can fly", pengiun.canFly); // Outputs: pengiun: {}
+// console.log("pengiun can feathers", pengiun.hasFeathers); // Outputs: peng
+
+
+// function noDefaultParams(number) {
+//     console.log('Result:', number * number)
+// }
+
+// // noDefaultParams(5); // Outputs: Result: 25
+// // noDefaultParams(); // Outputs: Result: NaN (Not a Number, because number is undefined)
+
+// function withDefaultParams(number = 10) {
+//     console.log('Result:', number * number)
+// }
+
+// withDefaultParams(); // Result: 100
+
+// class NoDefaultParams {
+//     constructor(num1, num2, num3, string1, bool1) {
+//         this.num1 = num1;
+//         this.num2 = num2;
+//         this.num3 = num3;
+//         this.string1 = string1;
+//         this.bool1 = bool1;
+//     }
+//     calculate() {
+//         if(this.bool1) {
+//             console.log(this.string1, this.num1 + this.num2 + this.num3);
+//             return;
+//         }
+//         return "The value of bool1 is incorrect"
+//     }
+// }
+
+// var fail = new NoDefaultParams(1,2,3,false);
+// console.log(fail.calculate()); // 'The value of bool1 is incorrect'
+
+// class WithDefaultParams {
+//     constructor(num1 = 1, num2 = 2, num3 = 3, string1 = "Result:", bool1 = true) {
+//         this.num1 = num1;
+//         this.num2 = num2;
+//         this.num3 = num3;
+//         this.string1 = string1;
+//         this.bool1 = bool1;
+//     }
+//     calculate() {
+//         if(this.bool1) {
+//             console.log(this.string1, this.num1 + this.num2 + this.num3);
+//             return;
+//         }
+//         return "The value of bool1 is incorrect"
+//     }
+// }
+// var better = new WithDefaultParams();
+// better.calculate(); // Result: 6
+
+
+
+// recursion
+
+// function myDay() {
+//     console.log('Morning');
+//     console.log('Afternoon');
+//     console.log('Evening');
+//     myDay();
+// }
+
+// myDay(); // This will cause a stack overflow error because the function calls itself indefinitely\\\
+
+// let counter = 3;
+// function example(){
+//     console.log("Counter value:", counter);
+//     counter = counter - 1;
+//     if(counter === 0) return;
+//     example();
+// }
+
+// example(); // This will cause a stack overflow error because the function calls itself indefinitely
+
+// var virtualPet = {
+//     sleepy: true,
+//     nap: function() {}
+// }
+
+// //creating an object
+// var virtualPet = {
+//     sleepy: true,
+//     nap: function() {
+//         this.sleepy = false
+//     }
+// }
+// console.log(virtualPet.sleepy) // true
+// virtualPet.nap()
+// console.log(virtualPet.sleepy) // false
+
+
+
+// function addTwoNums(a, b) {
+//     console.log(a + b)
+// }
+
+// function randomNum() {
+//     return Math.floor((Math.random() * 10) + 1);
+// }
+
+// function specificNum() { return 42 };
+
+// var useRandom = true;
+
+// var getNumber;
+
+// // This code checks if useRandom is true or false
+// // If true, it assigns getNumber to the randomNum function  
+// // If false, it assigns getNumber to the specificNum function
+// // This allows you to easily switch between using a random number or a specific number without changing the
+
+// if(useRandom) {
+//     getNumber = randomNum
+// } else {
+//     getNumber = specificNum
+// }
+
+// addTwoNums(getNumber(), getNumber())
+
+// let {PI} = Math; // Destructuring assignment to extract PI from Math object
+// console.log(PI);
+// console.log(PI === Math.PI); // true
+// console.log(PI === Math.PI); // false
+
+
+// For loops of objects
+
+// const car = {
+//     speed: 100,
+//     color: "blue"
+// }
+
+// for(prop of car) {
+//     console.log(prop)
+// } //Uncaught TypeError: car is not iterable
+
+// const colors = ['red','orange','yellow']
+// for (var color of colors) {
+//     console.log(color);
+// }
+
+
+// for-in loop
+
+// const car = {
+//     engine:true,
+//     streering:true,
+//     speed:"slow",
+
+// }
+
+// const sportsCar = Object.create(car); //reference to the car object
+// sportsCar.speed = "fast"; //sportsCar is a new object that inherits from car
+// sportsCar.color = "red";
+//  //adding a new property to sportsCar
+// console.log("sportsCar:", sportsCar); // Outputs: sportsCar: {}
+
+
+// console.log(" -- FOR-IN SAMPLE --")
+
+// // for-in loop iterates over the properties of an object
+// for (var prop in sportsCar) {
+//     console.log(prop, ":", sportsCar[prop]); // Outputs: engine : true, streering : true, speed : fast
+// }
+// console.log(" Iteration over object AND its prototype chain")
+
+// console.log(" -- FOR-OF SAMPLE --")
+
+// // for-of loop iterates over the values of an iterable object
+// for (prop of Object.keys(sportsCar)){ //it will iterate over the keys of the sportsCar object instead of the values
+//     console.log(prop + ": " + sportsCar[prop]); // Outputs: engine : true, streering : true, speed : fast
+// }
+// console.log(" Iteration over object only,  OWN PROPERTIES ONLY")
+
+
+
+
+// TEMPLATE LITERALS'
+// let noMultiLine = "No muli-line string in ES5";
+// console.log("Did you know?" + noMultiLine); // Outputs: Did you know? No muli-line string in ESS
+
+// let multiLine = `Using ES6 backticks, 
+// multi-line strings 
+// are possible.`
+
+// console.log("Did you know?" + multiLine); // Outputs: Did you know? Using ES6 backticks, multi-line strings are possible.
+
+
+// // ES6 Variable interpolation
+
+// let first = `He said, "Dont't you know? ES6, it's got some great features!"`;
+// let second = `"Wounldn't you want to learn more?", he asked.`;
+
+// console.log(`${first} - and I got curious. ${second}`); // Outputs: He said, "Dont't you know? ES6, it's got some great features!" - and I got curious. "Wounldn't you want to learn more?", he asked.
+
+
+
+
+// DATA STRUCTURES
+// Objects, Arrays, Sets, Maps
+
+// average
+// const grades = [85, 90, 78, 92, 88];
+// let gradeSum= 0;
+// for(let i = 0; i<grades.length; i++){
+//     // gradeSum = gradeSum + grades[i];
+//     gradeSum += grades[i]; // shorthand for adding to the sum
+// }
+
+// console.log("Total sum of grades:", gradeSum); // Outputs: Total sum of grades: 433
+// const average = gradeSum / grades.length;
+// console.log("Average grade:", average); // Outputs: Average grade: 86.6
+
+// set
+// const house1= 'red';
+// const house2= 'blue';
+// const house3= 'red';
+// const house4= 'blue';
+
+// const houses = new Set(); // Create a new Set to store unique house colors
+// houses.add(house1).add(house2).add(house3).add(house4); // Add houses to the Set
+
+// console.log("Houses:", houses); // Outputs: Houses: Set { 'red', 'blue' }
+// //red and blue are unique values, so they are stored only once in the Set
+
+
+// MAPS
+// Creating a new Map
+// const fruits = new Map();
+
+// // Adding key-value pairs
+// fruits.set('apple', 5);
+// fruits.set('banana', 3);
+// fruits.set('orange', 2);
+
+// // Getting values
+// console.log("Number of apples:", fruits.get('apple')); // 5
+
+// // Checking if a key exists
+// console.log("Do we have lemons?", fruits.has('lemon')); // false
+
+// // Size of the map
+// console.log("Total fruit types:", fruits.size); // 3
+
+// // Deleting an entry
+// fruits.delete('orange');
+// console.log("After deleting orange:", fruits);
+
+// // Iterating over a Map
+// console.log("All fruits:");
+// fruits.forEach((value, key) => {
+//     console.log(key + ": " + value);
+// });
+
+// // Another way to iterate using for...of
+// console.log("Using for...of:");
+// for (const [fruit, quantity] of fruits) {
+//     console.log(fruit + ": " + quantity);
+// }
+
+// // Creating a Map with initial values
+// const vegetables = new Map([
+//     ['carrot', 10],
+//     ['broccoli', 7],
+//     ['spinach', 5]
+// ]);
+
+// console.log("Vegetables Map:", vegetables);
+
+
+
+
+// MORE Arrays
+
+// const fruits = ['apple', 'banana', 'cherry'];
+// function appendIndex(currentFruit, index){ // Better parameter names
+//     console.log(`${index}. ${currentFruit}`)
+// }
+// fruits.forEach(appendIndex); // Outputs: 0: apple, 1: banana, 2: cherry
+
+// const fruits1 = ['kiwi','mango','apple','pear'];
+// function appendIndex(fruit1, index) {
+//     console.log(`${index}. ${fruit1}`)
+// }
+// fruits.forEach(appendIndex);
+
+// const fruits = ['apple', 'banana', 'cherry'];
+// function appendIndex(element, index, array){ // All three parameters
+//     console.log(`${index}. ${element}`)
+// }
+// fruits.forEach(appendIndex);
+
+// const veggies = ['onion', 'garlic', 'potato'];
+// veggies.forEach( function(veggie, index) {console.log(`${index}. ${veggie}`);}); //shorter
+
+// const nums = [0,10,20,30,40,50];
+// const filteredNums = nums.filter(function(num){
+//     return num > 20; 
+// }); // Outputs: 30, 40, 50
+
+// console.log(filteredNums);
+
+
+// const nums1 = [0,10,20,30,40,50];
+// console.log(nums1.filter(function(num){
+//     return num > 20; 
+// }));
+
+
+
+// MAP
+
+// const array = [0,10,20,30,40,50].map( function(num) {
+//     return num / 10
+// })
+
+// console.log(array); // Outputs: [0, 1, 2, 3, 4, 5]
+
+
+// ES6 Arrow Function Syntax
+// const array = [0,10,20,30,40,50].map(num => num / 10);
+// console.log(array); // Outputs: [0, 1, 2, 3, 4, 5]
+
+
+// for loop
+// const numbers = [1, 2, 3, 4, 5]
+// const arr = [];
+// for (let i = 0; i <numbers.length; i++){
+//     arr.push(numbers[i] * 2) //push each number multiplied by 2 into the arr array
+// }
+
+// console.log(arr); // Outputs: [2, 4, 6, 8, 10]
+
