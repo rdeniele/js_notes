@@ -1388,3 +1388,26 @@ function createCar(color, convertible, year, brand) { //this is a function that 
 
 // console.log(arr); // Outputs: [2, 4, 6, 8, 10]
 
+
+
+
+// SPREAD OPERATOR
+
+// let top3 = [
+//     "The Colosseum",
+//     "The Great Wall of China",
+//     "Machu Picchu"
+// ];
+
+// function showItenerary(place1,place2,place3) {
+//     // console.log("Visit" + place1);
+//     console.log(`Visit ${place1}`);
+//     // console.log("Then visit" + place2);
+//     console.log(`Then visit ${place2}`);
+//     // console.log("Finished with a visit to" + place2);
+//     console.log(`Finished with a visit to ${place2}`);
+// }
+// // showItenerary(top3[0], top3[1], top3[2]); // Outputs: Visit The Colosseum, Then visit The Great Wall of China, Finished with a visit to Machu Picchu
+// showItenerary(...top3); // Using spread operator to pass the array elements as arguments
+
+
